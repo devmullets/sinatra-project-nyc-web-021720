@@ -1,3 +1,3 @@
-class ListsController < Sinatra::Base
+class ListsController < ApplicationController
     # conaint get / post methods for our waiting lists
 end 
