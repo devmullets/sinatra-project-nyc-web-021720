@@ -11,6 +11,7 @@ class RestaurantsController < ApplicationController
     end 
     
     post '/restaurants' do
-    
+        new_restaurant = Restaurant.create(name: params[:name], rating: params[:rating], address: params[:address], cuisine: params[:cuisine])
+        redirect '/restaurants'
     end
 end 
